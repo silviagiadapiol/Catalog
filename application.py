@@ -33,7 +33,7 @@ def showLogin():
     state = ''.join(random.choice(string.ascii_uppercase + string.digits)
                     for x in xrange(32))
     login_session['state'] = state
-    print "The current session state is %s" % login_session['state']
+    #print "The current session state is %s" % login_session['state']
     return render_template('login.html', STATE=state)
 
 
@@ -116,7 +116,6 @@ def fbdisconnect():
 
 @app.route('/gconnect', methods=['POST'])
 def gconnect():
-    print 'inside g connect'
     # Validate state token
     if request.args.get('state') != login_session['state']:
         response = make_response(json.dumps('Invalid state parameter.'), 401)
@@ -365,7 +364,7 @@ def newItem(category_id):
             newItem = Item(name=request.form['name'], description=request.form['description'], price=request.form[
                                'price'], category_id=category_id, user_id=category.user_id)
             session.add(newItem)
-            flash('New Item %s has been Successfully Created' % (newItem.name))
+            flash('New Item %s Successfully Created' % (newItem.name))
             session.commit()
             return redirect(url_for('showItems', category_id=category_id))
         else:
