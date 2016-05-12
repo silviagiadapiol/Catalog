@@ -19,9 +19,9 @@ In Silvia Giada Piol GitHub fullstack-nanodegree-vm repository, inside vagrant/[
 * client_secrets.json _(it contains the client ID and the client secret for the google+ app)_
 * fb_client_secrets.json _(it contains the client ID and the client secret for the facebook app)_
 * application.py (it's a flask application that defines the pages routes and all the functions to navigate them; it also manages the authentication system with google+ or facebook)
-* templates folder _(it contains the html file that can be rendered in order to view the different pages)_
-* static folder _(it contains the style.css file that has got the style rules for the app)_
-* README.md _(the readme file with instructions)_
+* templates folder _(it contains the html files that can be rendered in order to view the different pages)_
+* static folder _(it contains the style.css file that defines the style rules for the app)_
+* README.md _(it contains the instructions for running the app)_
 
 
 ### QUICK START. 
