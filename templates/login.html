@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <!--LOAD PRE-REQUISITES FOR GOOGLE SIGN IN -->
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
   </script>
 
 <script src="//apis.google.com/js/platform.js?onload=start"> </script>
-
 <!-- END PRE-REQUISITES FOR GOOGLE SIGN IN -->
-
-
 </head>
-
-
 <body>  
 
-
 <!-- GOOGLE PLUS SIGN IN BUTTON-->
-
-          
-          <div id="signInButton">
+        <div id="signInButton">
           <span class="g-signin"
             data-scope="openid email"
             data-clientid="1083490921234-8rqidblchllu97n6th43i64i21hnrnep.apps.googleusercontent.com"
@@ -61,9 +52,6 @@ function signInCallback(authResult) {
       
   }); } }
 </script>
-
-
-
 <!--END GOOGLE PLUS SIGN IN -->
 
 <!--FACEBOOK SIGN IN -->
@@ -116,20 +104,12 @@ function signInCallback(authResult) {
     });
   }
 </script>
-
-
 <button>
-         
-
-          <fb:login-button scope="public_profile,email" onlogin="sendTokenToServer();">
-<a href='javascript:sendTokenToServer()'>Login with Facebook</a>
-
-</fb:login-button>
-
-
-        </button>
+  <fb:login-button scope="public_profile,email" onlogin="sendTokenToServer();">
+  <a href='javascript:sendTokenToServer()'>Login with Facebook</a>
+  </fb:login-button>
+</button>
 <!--END FACEBOOK SIGN IN -->
 
-  </body>
-
-  </html>
+</body>
+</html>
